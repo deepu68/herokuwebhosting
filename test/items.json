@@ -1,0 +1,43 @@
+{
+  "details": {
+    "input1": {
+      "a": {
+        "itemName": "book",
+        "category": "book",
+        "imported": "no",
+        "quantity": 1,
+        "price": 12.49
+      },
+      "b": {
+        "itemName": "music",
+        "category": "else",
+        "imported": "no",
+        "quantity": 1,
+        "price": 14.99
+      },
+      "c": {
+        "itemName": "chocolate",
+        "category": "food",
+        "imported": "no",
+        "quantity": 1,
+        "price": 0.85
+      }
+    },
+    "input2": {
+      "a": {
+        "itemName": "chocolate",
+        "category": "food",
+        "imported": "yes",
+        "quantity": 1,
+        "price": 10.0
+      },
+      "b": {
+        "itemName": "perfume",
+        "category": "else",
+        "imported": "yes",
+        "quantity": 1,
+        "price": 47.5
+      }
+    }
+  }
+}

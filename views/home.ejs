@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sales Calculator</title>
+    <style>
+      body {
+        background-image: url("car.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .myDiv {
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; color: white; font-size: 60px">
+      Sales Tax Calculator
+    </h1>
+    <div class="myDiv">
+      <form action="/" method="post">
+        Item Name :
+        <input
+          type="text"
+          name="itemName"
+          placeholder="Item Name"
+          required
+        /><br /><br />
+        Category :
+        <input
+          type="text"
+          name="category"
+          placeholder="food/book/meds/else"
+          required
+        /><br /><br />
+        Imported :
+        <input
+          type="text"
+          name="imported"
+          placeholder="Enter yes or no"
+          required
+        /><br /><br />
+        Quantity :
+        <input
+          type="number"
+          name="quantity"
+          placeholder="Enter Quantity"
+          required
+        /><br /><br />
+        Price :
+        <input
+          type="number"
+          name="price"
+          placeholder="Enter Price"
+          step=".01"
+          required
+        /><br /><br />
+        <!-- submit button -->
+        <input type="submit" value="Add Item" />
+      </form>
+      <br />
+      <a
+        style="text-align: center; font-size: 20px; color: white"
+        href="/calculate"
+        >Calculate</a
+      >
+    </div>
+  </body>
+</html>
