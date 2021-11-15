@@ -32,12 +32,12 @@ app.get("/calculate", (req, res) => {
   items.forEach((item) => {
     let salesTax = 0.0;
     let importTax = 0.0;
-    if (item.category == "else") {
+    if (item.category == "else" || item.category == "Else") {
       salesTax = parseFloat(((item.price * item.quantity) / 10).toFixed(2));
     }
-    if (item.imported == "yes") {
+    if (item.imported == "yes" || item.imported == "Yes") {
       importTax = parseFloat(((item.price * item.quantity) / 20).toFixed(2));
-      console.log(importTax);
+      //   console.log(importTax);
     }
     salesTaxTotal += salesTax + importTax;
     item.price = parseFloat((item.price + salesTax + importTax).toFixed(2));
