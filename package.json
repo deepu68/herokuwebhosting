@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
+    "start": "node index.js",
     "test": "mocha || true",
     "test-with-coverage": "nyc --reporter=text npm test --exit"
   },

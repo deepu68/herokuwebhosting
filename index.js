@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
+const port = process.env.PORT || 3000
 
 let items = [];
 
@@ -55,6 +56,6 @@ app.get("/newReceipt", (req, res) => {
   res.render("home");
 });
 
-app.listen(3000, () => console.log("Listening to 3000..."));
+app.listen(port, () => console.log(`Listening to ${port}...`));
 
 module.exports = app;
