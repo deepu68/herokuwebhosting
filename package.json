@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --mode development index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js",
     "make-model": "npx sequelize-cli model:generate --force --name itemDetail --attributes custName:string,itemName:string,category:string,imported:string,quantity:integer,price:float",
     "migrate": "npx sequelize-cli db:migrate",
