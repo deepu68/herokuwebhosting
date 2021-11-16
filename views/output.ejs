@@ -31,10 +31,10 @@
       </tr>
       <% data.forEach((item)=>{%>
       <tr>
-        <td><%=item.name%></td>
-        <td><%=item.imported%></td>
-        <td><%=item.quantity%></td>
-        <td><%=item.price%></td>
+        <td><%=item.dataValues.itemName%></td>
+        <td><%=item.dataValues.imported%></td>
+        <td><%=item.dataValues.quantity%></td>
+        <td><%=item.dataValues.price%></td>
       </tr>
       <%});%>
     </table>
