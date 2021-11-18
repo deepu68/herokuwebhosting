@@ -86,7 +86,7 @@ app.get("/calculate", (req, res) => {
 
 app.get("/newReceipt", (req, res) => {
   items = [];
-  res.render("home");
+  res.render("home")
 });
 
 app.listen(port, () => console.log(`Listening to ${port}...`));
